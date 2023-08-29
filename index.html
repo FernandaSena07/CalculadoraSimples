@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Calculadora</title>
+</head>
+<body>
+  <!--Div da caixa colorida-->
+  <div class="caixa">
+    <!--Div com informações da calculadora-->
+    <div class="calculator-container">
+      <!-- Titulo calculadora====-->
+      <p>Calculadora Simples</p>
+      <!--Caixa de resposta que se inicia em 0-->
+      <span class="exibeResposta">0</span>
+      <!--===== Tabela com botões =====-->
+      <table class="calculator-buttons">
+      <!-- Linha da tabela -->
+        <tr> 
+          <!-- Cada td(botão) terá um data-attribute para armazenamento de informações extras do DOM e em seguida o nome do atributo para chamada no js-->
+          <td data-clear-all>C</td> <!--Botão Limpar -->
+          <td data-delete>&#60;</td> <!-- Script para substituição de < com caracter de escape na frente. -->
+          <td data-operator="x">x</td> <!-- Simbolo de multiplicação "x" -->
+          <td data-operator="&#247;">&#247;</td> <!--Script para substituição de / com caracter de escape na frente.  -->
+        </tr>
+        <!-- Linha da tabela -->
+        <tr>
+          <td data-number="7">7</td><!--botão 7 -->
+          <td data-number="8">8</td><!--botão 8 -->
+          <td data-number="9">9</td><!--botão 9 -->
+          <td data-operator="-">-</td><!--botão "-" -->
+        </tr>
+        <!-- Linha da tabela -->
+        <tr>
+          <td data-number="4">4</td><!--botão 4 -->
+          <td data-number="5">5</td><!--botão 5 -->
+          <td data-number="6">6</td><!--botão 6 -->
+          <td data-operator="+">+</td><!--botão "+" -->
+        </tr>
+        <!-- Linha da tabela -->
+        <tr>
+          <td data-number="1">1</td><!--botão 1 -->
+          <td data-number="2">2</td><!--botão 2 -->
+          <td data-number="3">3</td><!--botão 3 -->
+          <td rowspan="2" data-equal="=">=</td><!--bota "=", rowspan="2" (oculpa duas linhas) -->
+        </tr>
+        <!-- Linha da tabela -->
+        <tr>
+          <td colspan="2" data-number="0">0</td> <!--botão 0, colspan="2"(oculpa duas colunas na tabela)-->
+          <td data-number=".">.</td><!--botão "." de casas decimais. -->
+        </tr>
+      </table><!--fechamento da tag tabela -->
+    </div>
+  </div>
+</body>
+
+<script src="./index.js"></script><!--Link referenciando o js -->
+</html>

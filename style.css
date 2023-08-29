@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #151320;
+}
+
+
+.caixa{
+  position: relative;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  font: bold 2em "Century Gothic";
+}
+
+.caixa::before, .caixa::after{
+  content: '';
+  position: absolute;
+  z-index: -1;
+  width: calc(100% + 30px);
+  height: calc(100% + 30px);
+  background: linear-gradient(45deg, #ffff00, #00ff00, #0099ff, #001aff, #a200ff, #ff0055, #ff0000, #ffff00, #00ff00, #0099ff, #0099ff, #001aff, #a200ff);
+  background-size: 300%;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  animation: AnimarBorda 4s linear alternate infinite;
+}
+
+@keyframes AnimarBorda{
+  0%{
+    background-position: 0;
+  }
+  100%{
+    background-position: 100%;
+  }
+}
+.caixa::after{
+  filter: blur(50px);
+}
+
+
+.calculator-container {
+  background-color: #151320;
+  padding: 24px 12px 12px;
+  border-radius: 6px;
+}
+p{
+  font-size:1.5rem;
+  color: #fff;
+  margin-bottom: 5%;
+}
+
+.calculator-container p{
+  display: flex;
+  justify-content: center;
+}
+.exibeResposta {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: #fff;
+  font-size: 20px;
+  height: 34px;
+  margin: 0 15px;
+  padding-right: 6px;
+  border-radius: 6px;
+}
+
+/*Espaçamento entre os botões*/
+.calculator-buttons {
+  border-spacing: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Estilizando os botões do html */
+td {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  background: #3b3939;
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+td:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+
+
