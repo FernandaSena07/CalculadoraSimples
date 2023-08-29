@@ -9,7 +9,7 @@ body{
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #151320;
+  background-color: #000000;
 }
 
 
@@ -50,7 +50,7 @@ body{
 
 
 .calculator-container {
-  background-color: #151320;
+  background-color: #000000;
   padding: 24px 12px 12px;
   border-radius: 6px;
 }
