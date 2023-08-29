@@ -64,6 +64,7 @@ p{
   display: flex;
   justify-content: center;
 }
+
 .exibeResposta {
   display: flex;
   align-items: center;
