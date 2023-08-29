@@ -1,2 +1,2 @@
 # CalculadoraSimples
-##Calculadora desenvolvida em HTML, CSS e JavaScript :desktop_computer::dart:
+Calculadora desenvolvida em HTML, CSS e JavaScript :desktop_computer::dart:
