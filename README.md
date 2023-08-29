@@ -1,7 +1,7 @@
 # CalculadoraSimples
 Calculadora desenvolvida em HTML, CSS e JavaScript :desktop_computer::dart:
 ## Application screen  
-![](https://user-images.githubusercontent.com/99515163/264146163-15f2cdb9-4d11-462b-acf3-29dc5a4065ae.png)
+![](https://github.com/FernandaSena07/CalculadoraSimples/issues/2#issue-1872486151)
 
 
 
